@@ -1,0 +1,9 @@
+@import url("base.css");
+
+/* Página atual destacada no menu */
+#menu a[href="recursos_estudo.html"],
+#menu a[href="recursos_estudo.html"]:visited {
+    background-color: #116bf2;
+    color: #ffffff;
+    font-weight: 700;
+}

@@ -1,0 +1,303 @@
+/* ==========================================================
+   PlanoUni - estilo comum a todas as páginas
+   Cada arquivo de página importa este arquivo (veja a 1ª linha
+   dele) e acrescenta só o que é específico daquela página.
+   ========================================================== */
+
+/* ---------- 1. BASE: caixa, fonte, cores e margem ---------- */
+* {
+    box-sizing: border-box;
+    /* padding e borda entram na largura do elemento */
+}
+
+body {
+    margin: 0;
+    /* tira a faixa branca padrão do navegador */
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: #1d2433;
+    background-color: #f4f7fc;
+
+    /* ---------- 2. LAYOUT em grade: topo, menu | conteúdo, rodapé ---------- */
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "topo topo"
+        "menu conteudo"
+        "rodape rodape";
+}
+
+/* ---------- 3. CABEÇALHO ---------- */
+#header {
+    grid-area: topo;
+    background-color: #14213d;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0 0 6px;
+    color: #6fa8ff;
+}
+
+#header p {
+    margin: 0;
+    color: #dbe7ff;
+}
+
+/* ---------- 4. MENU ---------- */
+#menu {
+    grid-area: menu;
+    background-color: #1b2a49;
+}
+
+#menu ul {
+    list-style: none;
+    /* sem marcadores */
+    margin: 0;
+    padding: 16px 0;
+}
+
+#menu a,
+#menu a:visited {
+    display: block;
+    /* o link ocupa a linha inteira */
+    padding: 10px 20px;
+    color: #dbe7ff;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+#menu a:hover,
+#menu a:focus {
+    background-color: #116bf2;
+    color: #ffffff;
+}
+
+/* ---------- 5. CONTEÚDO PRINCIPAL ---------- */
+#main {
+    grid-area: conteudo;
+    padding: 24px 32px;
+    min-width: 0;
+    /* evita que um elemento largo estoure a coluna */
+}
+
+#main h2 {
+    margin: 0 0 12px;
+    color: #14213d;
+}
+
+#main section {
+    margin-bottom: 28px;
+}
+
+#main article {
+    margin-bottom: 28px;
+    padding: 16px 20px;
+    background-color: #ffffff;
+    border: 1px solid #dbe4f5;
+    border-radius: 8px;
+}
+
+#main a {
+    color: #0b57d0;
+}
+
+#main a:hover {
+    text-decoration: none;
+}
+
+/* conteúdo lateral (aside): destaque visual diferente */
+#main aside {
+    margin-bottom: 28px;
+    padding: 12px 16px;
+    background-color: #eaf1ff;
+    border-left: 4px solid #116bf2;
+    border-radius: 4px;
+}
+
+#main aside h3 {
+    margin: 0 0 6px;
+    color: #14213d;
+}
+
+#main aside p {
+    margin: 0;
+}
+
+/* ---------- 6. RODAPÉ ---------- */
+#footer {
+    grid-area: rodape;
+    background-color: #14213d;
+    color: #ffffff;
+    padding: 16px;
+    text-align: center;
+}
+
+#footer p {
+    margin: 4px 0;
+}
+
+/* ---------- 7. FORMULÁRIOS ---------- */
+fieldset {
+    margin: 0 0 16px;
+    padding: 12px 16px 16px;
+    background-color: #ffffff;
+    border: 1px solid #c9d6ee;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: 700;
+    color: #14213d;
+}
+
+form br {
+    display: none;
+    /* o espaçamento agora vem do CSS, não das quebras de linha */
+}
+
+/* rótulos ligados a um campo: ficam em cima do campo */
+form label[for] {
+    display: block;
+    margin-top: 14px;
+    font-weight: 600;
+}
+
+/* rótulos que envolvem caixas de marcar e botões de opção: ficam em linha */
+form label:not([for]) {
+    display: inline-block;
+    margin: 6px 16px 6px 0;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="time"],
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 4px;
+    padding: 8px 10px;
+    font: inherit;
+    background-color: #ffffff;
+    border: 1px solid #9fb3d9;
+    border-radius: 6px;
+}
+
+form input[type="range"] {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 8px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus-visible,
+#main a:focus-visible {
+    outline: 3px solid #ffbf47;
+    /* contorno visível para quem navega pelo teclado */
+    outline-offset: 2px;
+}
+
+button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    font: inherit;
+    color: #ffffff;
+    background-color: #116bf2;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0b57d0;
+}
+
+/* ---------- 8. PERGUNTAS FREQUENTES (details/summary) ---------- */
+details {
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    background-color: #ffffff;
+    border: 1px solid #c9d6ee;
+    border-radius: 8px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+details p {
+    margin: 10px 0 0;
+}
+
+/* ---------- 9. IMAGEM, ÁUDIO E VÍDEO ---------- */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+audio {
+    width: 100%;
+    max-width: 480px;
+}
+
+figure {
+    margin: 16px 0;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #4a5878;
+}
+
+/* ---------- 10. CELULAR (telas até 700px) ---------- */
+@media (max-width: 700px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+            "topo"
+            "menu"
+            "conteudo"
+            "rodape";
+    }
+
+    #menu ul {
+        display: flex;
+        /* itens do menu lado a lado, quebrando linha */
+        flex-wrap: wrap;
+        padding: 8px;
+    }
+
+    #menu a,
+    #menu a:visited {
+        padding: 8px 12px;
+    }
+
+    #main {
+        padding: 16px;
+    }
+
+    table {
+        display: block;
+        /* permite rolar a tabela na horizontal */
+        overflow-x: auto;
+    }
+}

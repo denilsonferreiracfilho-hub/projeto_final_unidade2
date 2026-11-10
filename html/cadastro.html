@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro | PlanoUni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denilson Ferreira de Carvalho Filho">
+    <meta name="description"
+        content="Formulário de cadastro com nome, e-mail, curso e semestre para começar a usar a plataforma de estudos.">
+    <meta name="keywords" content="cadastro, universitário, curso, semestre, estudos">
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Cadastro</h1>
+        <p>Informe seus dados para começar</p>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="materias.html">Matérias</a></li>
+            <li><a href="disponibilidade.html">Disponibilidade</a></li>
+            <li><a href="provas_trabalhos.html">Provas e trabalhos</a></li>
+            <li><a href="cronograma.html">Cronograma</a></li>
+            <li><a href="dicas_estudo.html">Dicas de estudo</a></li>
+            <li><a href="perguntas_frequentes.html">Perguntas frequentes</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="recursos_estudo.html">Recursos de estudo</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section>
+            <h2>Seus dados</h2>
+            <form>
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    <br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                    <br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados acadêmicos</legend>
+
+                    <label for="curso">Curso:</label>
+                    <input type="text" id="curso" name="curso" placeholder="Ex.: Ciência da Computação" required>
+                    <br><br>
+
+                    <label for="semestre">Semestre:</label>
+                    <select id="semestre" name="semestre" required>
+                        <option value="">Selecione</option>
+                        <option value="1">1º semestre</option>
+                        <option value="2">2º semestre</option>
+                        <option value="3">3º semestre</option>
+                        <option value="4">4º semestre</option>
+                        <option value="5">5º semestre</option>
+                        <option value="6">6º semestre</option>
+                        <option value="7">7º semestre</option>
+                        <option value="8">8º semestre</option>
+                        <option value="9">9º semestre ou mais</option>
+                    </select>
+                    <br><br>
+                </fieldset>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <article>
+            <h2>Por que esses dados são necessários?</h2>
+            <p>O curso e o semestre ajudam a sugerir matérias e a organizar o cronograma. Nenhuma outra informação é
+                necessária.</p>
+        </article>
+
+        <aside>
+            <h3>Sobre seus dados</h3>
+            <p>O cadastro não pede senha. Nesta versão de demonstração, o formulário não guarda as informações.</p>
+        </aside>
+    </main>
+
+    <footer id="footer">
+        <p>Site desenvolvido para fins acadêmicos</p>
+        <p>Autor responsável pelo site: Denilson Ferreira de Carvalho Filho</p>
+        <p>Turma: P2E</p>
+    </footer>
+
+</body>
+
+</html>

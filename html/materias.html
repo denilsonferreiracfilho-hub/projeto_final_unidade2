@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Matérias | PlanoUni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denilson Ferreira de Carvalho Filho">
+    <meta name="description"
+        content="Formulário para escolher as matérias do semestre que entrarão no cronograma de estudos.">
+    <meta name="keywords" content="matérias, disciplinas, semestre, cronograma, estudos">
+    <link rel="stylesheet" href="../css/materias.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Matérias</h1>
+        <p>Escolha as disciplinas do semestre</p>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="materias.html">Matérias</a></li>
+            <li><a href="disponibilidade.html">Disponibilidade</a></li>
+            <li><a href="provas_trabalhos.html">Provas e trabalhos</a></li>
+            <li><a href="cronograma.html">Cronograma</a></li>
+            <li><a href="dicas_estudo.html">Dicas de estudo</a></li>
+            <li><a href="perguntas_frequentes.html">Perguntas frequentes</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="recursos_estudo.html">Recursos de estudo</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section>
+            <h2>Adicionar matéria</h2>
+            <form>
+                <label for="materia">Matéria:</label>
+                <input type="text" id="materia" name="materia" list="sugestoes-materias"
+                    placeholder="Digite ou escolha uma matéria" required>
+
+                <datalist id="sugestoes-materias">
+                    <option value="Cálculo I">
+                    <option value="Programação I">
+                    <option value="Algoritmos e Estruturas de Dados">
+                    <option value="Banco de Dados">
+                    <option value="Redes de Computadores">
+                    <option value="Engenharia de Software">
+                    <option value="Estatística">
+                    <option value="Física">
+                    <option value="Inglês Técnico">
+                    <option value="Desenvolvimento Front-End para Web">
+                </datalist>
+
+                <button type="submit">Adicionar matéria</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Exemplo de matérias escolhidas</h2>
+            <ul>
+                <li>Cálculo I</li>
+                <li>Programação I</li>
+                <li>Banco de Dados</li>
+            </ul>
+        </section>
+
+        <article>
+            <h2>Como as matérias entram no cronograma?</h2>
+            <p>Em uma versão completa, cada matéria adicionada ganharia horários de estudo na semana, de acordo com a
+                disponibilidade e com as provas cadastradas. Nesta versão de demonstração, o cronograma é um exemplo.
+            </p>
+        </article>
+
+        <aside>
+            <h3>Não achou sua matéria?</h3>
+            <p>Você pode digitar o nome que quiser no campo. A lista é só uma sugestão.</p>
+        </aside>
+    </main>
+
+    <footer id="footer">
+        <p>Site desenvolvido para fins acadêmicos</p>
+        <p>Autor responsável pelo site: Denilson Ferreira de Carvalho Filho</p>
+        <p>Turma: P2E</p>
+    </footer>
+
+</body>
+
+</html>

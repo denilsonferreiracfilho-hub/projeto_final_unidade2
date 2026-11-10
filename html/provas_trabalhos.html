@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Provas e trabalhos | PlanoUni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denilson Ferreira de Carvalho Filho">
+    <meta name="description"
+        content="Formulário para cadastrar provas e trabalhos com matéria, data e nível de dificuldade.">
+    <meta name="keywords" content="provas, trabalhos, datas, dificuldade, prazos, estudos">
+    <link rel="stylesheet" href="../css/provas_trabalhos.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Provas e trabalhos</h1>
+        <p>Cadastre o que tem data para acontecer</p>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="materias.html">Matérias</a></li>
+            <li><a href="disponibilidade.html">Disponibilidade</a></li>
+            <li><a href="provas_trabalhos.html">Provas e trabalhos</a></li>
+            <li><a href="cronograma.html">Cronograma</a></li>
+            <li><a href="dicas_estudo.html">Dicas de estudo</a></li>
+            <li><a href="perguntas_frequentes.html">Perguntas frequentes</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="recursos_estudo.html">Recursos de estudo</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section>
+            <h2>Novo compromisso</h2>
+            <form>
+                <fieldset>
+                    <legend>Tipo</legend>
+
+                    <label><input type="radio" name="tipo" value="prova" checked> Prova</label>
+                    <label><input type="radio" name="tipo" value="trabalho"> Trabalho</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalhes</legend>
+
+                    <label for="materia-prova">Matéria:</label>
+                    <input type="text" id="materia-prova" name="materia" placeholder="Ex.: Banco de Dados" required>
+                    <br><br>
+
+                    <label for="data-entrega">Data:</label>
+                    <input type="date" id="data-entrega" name="data" required>
+                    <br><br>
+
+                    <label for="dificuldade">Dificuldade (1 = fácil, 5 = difícil):</label>
+                    <input type="range" id="dificuldade" name="dificuldade" min="1" max="5" value="3">
+                    <br><br>
+
+                    <label for="observacoes">Observações:</label>
+                    <br>
+                    <textarea id="observacoes" name="observacoes" rows="4" cols="40"
+                        placeholder="Conteúdo que vai cair, formato da prova, etc."></textarea>
+                </fieldset>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Exemplo de compromissos cadastrados</h2>
+            <ul>
+                <li>Prova de Cálculo I (dificuldade 4)</li>
+                <li>Trabalho de Programação I (dificuldade 3)</li>
+                <li>Prova de Banco de Dados (dificuldade 5)</li>
+            </ul>
+        </section>
+
+        <article>
+            <h2>Como isso muda o cronograma?</h2>
+            <p>Em uma versão completa, matérias com prova ou trabalho mais próximo, ou de maior dificuldade, receberiam
+                mais horários de estudo na semana.</p>
+        </article>
+
+        <aside>
+            <h3>Por que a dificuldade importa?</h3>
+            <p>Uma matéria difícil costuma pedir mais tempo, mesmo quando a data ainda está longe.</p>
+        </aside>
+    </main>
+
+    <footer id="footer">
+        <p>Site desenvolvido para fins acadêmicos</p>
+        <p>Autor responsável pelo site: Denilson Ferreira de Carvalho Filho</p>
+        <p>Turma: P2E</p>
+    </footer>
+
+</body>
+
+</html>

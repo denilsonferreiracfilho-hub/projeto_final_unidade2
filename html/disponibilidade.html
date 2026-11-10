@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Disponibilidade | PlanoUni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denilson Ferreira de Carvalho Filho">
+    <meta name="description"
+        content="Formulário para informar os dias da semana e o horário em que o estudante pode estudar.">
+    <meta name="keywords" content="disponibilidade, horários, dias da semana, estudo, cronograma">
+    <link rel="stylesheet" href="../css/disponibilidade.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Disponibilidade</h1>
+        <p>Diga quando você pode estudar</p>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="materias.html">Matérias</a></li>
+            <li><a href="disponibilidade.html">Disponibilidade</a></li>
+            <li><a href="provas_trabalhos.html">Provas e trabalhos</a></li>
+            <li><a href="cronograma.html">Cronograma</a></li>
+            <li><a href="dicas_estudo.html">Dicas de estudo</a></li>
+            <li><a href="perguntas_frequentes.html">Perguntas frequentes</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="recursos_estudo.html">Recursos de estudo</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section>
+            <h2>Seus horários livres</h2>
+            <form>
+                <fieldset>
+                    <legend>Dias disponíveis</legend>
+
+                    <label><input type="checkbox" name="dia" value="segunda"> Segunda</label>
+                    <label><input type="checkbox" name="dia" value="terca"> Terça</label>
+                    <label><input type="checkbox" name="dia" value="quarta"> Quarta</label>
+                    <label><input type="checkbox" name="dia" value="quinta"> Quinta</label>
+                    <label><input type="checkbox" name="dia" value="sexta"> Sexta</label>
+                    <label><input type="checkbox" name="dia" value="sabado"> Sábado</label>
+                    <label><input type="checkbox" name="dia" value="domingo"> Domingo</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Horário de estudo</legend>
+
+                    <label for="hora-inicio">Início:</label>
+                    <input type="time" id="hora-inicio" name="hora-inicio" required>
+                    <br><br>
+
+                    <label for="hora-fim">Fim:</label>
+                    <input type="time" id="hora-fim" name="hora-fim" required>
+                    <br><br>
+                </fieldset>
+
+                <button type="submit">Salvar disponibilidade</button>
+            </form>
+        </section>
+
+        <article>
+            <h2>Para que serve a disponibilidade?</h2>
+            <p>Em uma versão completa, o cronograma usaria só os dias e horários marcados aqui. Quanto mais realista a
+                informação, mais útil seria o plano.</p>
+        </article>
+
+        <aside>
+            <h3>Dica</h3>
+            <p>Escolha os horários em que você costuma ter mais energia e menos interrupções.</p>
+        </aside>
+    </main>
+
+    <footer id="footer">
+        <p>Site desenvolvido para fins acadêmicos</p>
+        <p>Autor responsável pelo site: Denilson Ferreira de Carvalho Filho</p>
+        <p>Turma: P2E</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+@import url("base.css");
+
+/* Página atual destacada no menu */
+#menu a[href="provas_trabalhos.html"],
+#menu a[href="provas_trabalhos.html"]:visited {
+    background-color: #116bf2;
+    color: #ffffff;
+    font-weight: 700;
+}

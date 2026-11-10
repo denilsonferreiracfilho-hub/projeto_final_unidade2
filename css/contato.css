@@ -1,0 +1,8 @@
+@import url("base.css");
+
+#menu a[href="contato.html"],
+#menu a[href="contato.html"]:visited {
+    background-color: #116bf2;
+    color: #ffffff;
+    font-weight: 700;
+}

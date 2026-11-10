@@ -1,0 +1,54 @@
+@import url("base.css");
+
+/* Página atual destacada no menu */
+#menu a[href="cronograma.html"],
+#menu a[href="cronograma.html"]:visited {
+    background-color: #116bf2;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* ---------- TABELA DO CRONOGRAMA ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;   /* une as bordas das células */
+    background-color: #ffffff;
+}
+
+caption {
+    caption-side: top;
+    padding: 8px 0;
+    font-weight: 600;
+    color: #14213d;
+}
+
+th,
+td {
+    padding: 8px 10px;
+    text-align: center;
+    border: 1px solid #c9d6ee;
+}
+
+thead th {
+    background-color: #14213d;
+    color: #ffffff;
+}
+
+tbody th {
+    background-color: #eaf1ff;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f6fd;   /* linhas alternadas */
+}
+
+tbody tr:hover {
+    background-color: #dde8ff;   /* destaque ao passar o mouse */
+}
+
+progress,
+meter {
+    width: 200px;
+    vertical-align: middle;
+}

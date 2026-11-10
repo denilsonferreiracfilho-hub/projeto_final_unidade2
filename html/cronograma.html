@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cronograma | PlanoUni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denilson Ferreira de Carvalho Filho">
+    <meta name="description"
+        content="Exemplo de cronograma semanal de estudos em uma tabela organizada por dia e horário.">
+    <meta name="keywords" content="cronograma, semana, estudos, horários, tabela, progresso">
+    <link rel="stylesheet" href="../css/cronograma.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Cronograma</h1>
+        <p>Seu plano de estudos da semana</p>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="materias.html">Matérias</a></li>
+            <li><a href="disponibilidade.html">Disponibilidade</a></li>
+            <li><a href="provas_trabalhos.html">Provas e trabalhos</a></li>
+            <li><a href="cronograma.html">Cronograma</a></li>
+            <li><a href="dicas_estudo.html">Dicas de estudo</a></li>
+            <li><a href="perguntas_frequentes.html">Perguntas frequentes</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="recursos_estudo.html">Recursos de estudo</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section>
+            <h2>Tabela semanal</h2>
+            <table border="1">
+                <caption>Cronograma semanal (exemplo)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Horário</th>
+                        <th scope="col">Segunda</th>
+                        <th scope="col">Terça</th>
+                        <th scope="col">Quarta</th>
+                        <th scope="col">Quinta</th>
+                        <th scope="col">Sexta</th>
+                        <th scope="col">Sábado</th>
+                        <th scope="col">Domingo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">18:00 – 19:00</th>
+                        <td>Cálculo I</td>
+                        <td>Programação I</td>
+                        <td>Banco de Dados</td>
+                        <td>Cálculo I</td>
+                        <td>Programação I</td>
+                        <td>—</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">19:00 – 20:00</th>
+                        <td>Banco de Dados</td>
+                        <td>Cálculo I</td>
+                        <td>Programação I</td>
+                        <td>Banco de Dados</td>
+                        <td>Cálculo I</td>
+                        <td>—</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">20:00 – 21:00</th>
+                        <td>Programação I</td>
+                        <td>Banco de Dados</td>
+                        <td>Cálculo I</td>
+                        <td>Programação I</td>
+                        <td>Banco de Dados</td>
+                        <td>Revisão geral</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Acompanhamento</h2>
+            <p>
+                <label for="progresso-semana">Progresso da semana:</label>
+                <progress id="progresso-semana" value="40" max="100">40%</progress>
+                40% concluído (exemplo)
+            </p>
+            <p>
+                <label for="carga-estudo">Carga de estudo:</label>
+                <meter id="carga-estudo" min="0" max="20" value="12">12 horas</meter>
+                12 de 20 horas semanais (exemplo)
+            </p>
+        </section>
+
+        <article>
+            <h2>Como ler o cronograma?</h2>
+            <p>Cada linha é um horário de estudo e cada coluna é um dia da semana. Os traços indicam horários sem estudo
+                marcado.</p>
+        </article>
+
+        <aside>
+            <h3>Atenção</h3>
+            <p>Os dados desta tabela são um exemplo. Em uma versão completa, ela seria gerada a partir das matérias, dos
+                horários e das provas informados.</p>
+        </aside>
+    </main>
+
+    <footer id="footer">
+        <p>Site desenvolvido para fins acadêmicos</p>
+        <p>Autor responsável pelo site: Denilson Ferreira de Carvalho Filho</p>
+        <p>Turma: P2E</p>
+    </footer>
+
+</body>
+
+</html>

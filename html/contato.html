@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato | PlanoUni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Denilson Ferreira de Carvalho Filho">
+    <meta name="description"
+        content="Formulário de contato para enviar uma dúvida ou sugestão sobre a plataforma PlanoUni.">
+    <meta name="keywords" content="contato, dúvidas, sugestões, formulário, plataforma de estudos">
+    <link rel="stylesheet" href="../css/contato.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Contato</h1>
+        <p>Envie uma dúvida ou sugestão</p>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="materias.html">Matérias</a></li>
+            <li><a href="disponibilidade.html">Disponibilidade</a></li>
+            <li><a href="provas_trabalhos.html">Provas e trabalhos</a></li>
+            <li><a href="cronograma.html">Cronograma</a></li>
+            <li><a href="dicas_estudo.html">Dicas de estudo</a></li>
+            <li><a href="perguntas_frequentes.html">Perguntas frequentes</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="recursos_estudo.html">Recursos de estudo</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section>
+            <h2>Formulário de contato</h2>
+            <form>
+                <fieldset>
+                    <legend>Seus dados</legend>
+
+                    <label for="nome-contato">Nome:</label>
+                    <input type="text" id="nome-contato" name="nome" placeholder="Digite seu nome" required>
+                    <br><br>
+
+                    <label for="email-contato">E-mail:</label>
+                    <input type="email" id="email-contato" name="email" placeholder="exemplo@email.com" required>
+                    <br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mensagem</legend>
+
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="problema">Problema técnico</option>
+                    </select>
+                    <br><br>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <br>
+                    <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva aqui a sua mensagem"
+                        required></textarea>
+                    <br><br>
+
+                    <label><input type="checkbox" name="quer-resposta" value="sim"> Quero receber
+                        resposta por e-mail</label>
+                </fieldset>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+
+        <article>
+            <h2>Quando entrar em contato?</h2>
+            <p>Use este formulário para tirar dúvidas sobre como montar o cronograma, sugerir melhorias ou avisar sobre
+                algum problema nas páginas.</p>
+        </article>
+
+        <aside>
+            <h3>Aviso</h3>
+            <p>Este formulário faz parte de um projeto acadêmico e, por enquanto, não envia mensagens para ninguém.</p>
+        </aside>
+    </main>
+
+    <footer id="footer">
+        <p>Site desenvolvido para fins acadêmicos</p>
+        <p>Autor responsável pelo site: Denilson Ferreira de Carvalho Filho</p>
+        <p>Turma: P2E</p>
+    </footer>
+
+</body>
+
+</html>
