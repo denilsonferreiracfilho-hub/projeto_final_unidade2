@@ -69,11 +69,11 @@ Não é preciso instalar nada. Baixe o projeto e abra o arquivo `html/inicio.htm
 
 ## Mídias
 
-| Arquivo | Onde é usado |
+| Arquivo | Onde é usado | Fonte e licença |
 |---|---|---|
-| `audio/leberch-deep-concentration-263073.mp3` | Dicas de estudo | 
-| Imagem da pasta `img/` | Sobre | 
-| Vídeo da pasta `video/` | Dicas de estudo | 
+| Áudio da pasta `audio/` `audio/leberch-deep-concentration-263073.mp3` | Dicas de estudo | Pixabay |
+| Imagem da pasta `img/` | Sobre | Pngtree |
+| Vídeo da pasta `video/` | Dicas de estudo | Vecteezy |
 
 ## Autor
 
