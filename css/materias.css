@@ -1,6 +1,5 @@
 @import url("base.css");
 
-/* Página atual destacada no menu */
 #menu a[href="materias.html"],
 #menu a[href="materias.html"]:visited {
     background-color: #116bf2;

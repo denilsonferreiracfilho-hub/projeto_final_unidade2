@@ -1,6 +1,5 @@
 @import url("base.css");
 
-/* Página atual destacada no menu */
 #menu a[href="cronograma.html"],
 #menu a[href="cronograma.html"]:visited {
     background-color: #116bf2;
@@ -8,10 +7,9 @@
     font-weight: 700;
 }
 
-/* ---------- TABELA DO CRONOGRAMA ---------- */
 table {
     width: 100%;
-    border-collapse: collapse;   /* une as bordas das células */
+    border-collapse: collapse; 
     background-color: #ffffff;
 }
 
@@ -22,8 +20,7 @@ caption {
     color: #14213d;
 }
 
-th,
-td {
+th, td {
     padding: 8px 10px;
     text-align: center;
     border: 1px solid #c9d6ee;
@@ -40,11 +37,11 @@ tbody th {
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f2f6fd;   /* linhas alternadas */
+    background-color: #f2f6fd;
 }
 
 tbody tr:hover {
-    background-color: #dde8ff;   /* destaque ao passar o mouse */
+    background-color: #dde8ff;
 }
 
 progress,
