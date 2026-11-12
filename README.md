@@ -61,7 +61,7 @@ O arquivo `base.css` reúne o estilo comum a todas as páginas. O CSS de cada p�
 
 Não é preciso instalar nada. Baixe o projeto e abra o arquivo `html/inicio.html` em um navegador. A partir do menu, as demais páginas podem ser acessadas.
 
-## Próximos passos a serem realizados futuramente
+## Melhorias futuras
 
 - Validar os formulários com JavaScript.
 - Gerar o cronograma semanal a partir das matérias, dos horários e das provas informados.
@@ -71,7 +71,7 @@ Não é preciso instalar nada. Baixe o projeto e abra o arquivo `html/inicio.htm
 
 | Arquivo | Onde é usado | Fonte e licença |
 |---|---|---|
-| Áudio da pasta `audio/` `audio/leberch-deep-concentration-263073.mp3` | Dicas de estudo | Pixabay |
+| `audio/leberch-deep-concentration-263073.mp3` | Dicas de estudo | Pixabay |
 | Imagem da pasta `img/` | Sobre | Pngtree |
 | Vídeo da pasta `video/` | Dicas de estudo | Vecteezy |
 
