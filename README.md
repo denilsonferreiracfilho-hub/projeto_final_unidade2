@@ -1,80 +1,106 @@
 # PlanoUni
 
-Plataforma de estudos para universitários, feita como protótipo em **HTML e CSS**.
+**Plataforma de estudos para universitários**, desenvolvida como protótipo utilizando HTML5 e CSS3.
 
 Projeto final da disciplina de **Desenvolvimento Front-End para Web**.
 
-## Sobre o projeto
+## 1. Sobre o projeto
 
-O PlanoUni nasceu da dificuldade de dividir o tempo de estudo entre várias disciplinas, provas e trabalhos na universidade. A proposta é que o universitário escolha suas matérias, informe os dias e horários em que pode estudar, cadastre suas provas e trabalhos e receba um cronograma semanal de estudos.
+O PlanoUni nasceu da dificuldade de dividir o tempo de estudo entre várias disciplinas, provas e trabalhos na universidade.
 
-## Para quem é
+A proposta é permitir que o universitário escolha suas matérias, informe os dias e horários disponíveis para estudar, cadastre provas e trabalhos e visualize um cronograma semanal de estudos.
 
-Para estudantes universitários que precisam organizar a rotina de estudos entre diferentes matérias.
+## 2. Objetivo
 
-## Status do projeto
+Oferecer uma proposta de organização acadêmica que ajude estudantes universitários a administrar melhor seu tempo e suas atividades.
 
-Esta versão é um **protótipo inicial**, construído apenas com HTML e CSS:
+## 3. Público-alvo
 
-- Os formulários **não enviam nem guardam dados**.
-- O cronograma da página **Cronograma** é um **exemplo fixo**, escrito à mão.
-- O JavaScript, que faria a validação dos formulários e a geração do cronograma, **não foi usado** nesta versão.
+Estudantes universitários que precisam organizar diferentes disciplinas, provas, trabalhos e horários de estudo.
 
-## Páginas
+## 4. Minha contribuição
 
-| Página | Arquivo | O que mostra |
-|---|---|---|
-| Início | `inicio.html` | Apresentação da plataforma e como ela funcionaria |
-| Cadastro | `cadastro.html` | Formulário com nome, e-mail, curso e semestre |
-| Matérias | `materias.html` | Formulário para escolher as disciplinas, com sugestões |
-| Disponibilidade | `disponibilidade.html` | Dias da semana e horários livres para estudar |
-| Provas e trabalhos | `provas_trabalhos.html` | Formulário com tipo, matéria, data e dificuldade |
-| Cronograma | `cronograma.html` | Tabela semanal de exemplo, com progresso e carga de estudo |
-| Dicas de estudo | `dicas_estudo.html` | Hábitos de estudo, música para focar e vídeo de apoio |
-| Perguntas frequentes | `perguntas_frequentes.html` | Dúvidas comuns em blocos que abrem e fecham |
-| Sobre | `sobre.html` | Objetivo do projeto e autor |
-| Contato | `contato.html` | Formulário de contato (demonstração) |
-| Recursos de estudo | `recursos_estudo.html` | Links úteis para pesquisa e estudo |
+Minha participação no projeto envolveu a organização da proposta da plataforma e o desenvolvimento de sua estrutura visual. O trabalho contempla páginas HTML, estilização com CSS, navegação entre as seções e organização dos arquivos do projeto.
 
-Todas as páginas têm o mesmo menu de navegação, para ir de qualquer página para qualquer outra.
+Também trabalhei na estruturação dos formulários e na organização dos elementos da interface.
 
-## Tecnologias utilizadas
+## 5. Páginas do projeto
 
-- **HTML5**
-- **CSS3**
+O PlanoUni possui as seguintes páginas:
 
-## Estrutura de pastas
+1. `inicio.html` — Página inicial.
+2. `cadastro.html` — Cadastro do usuário.
+3. `materias.html` — Organização das matérias.
+4. `disponibilidade.html` — Definição dos horários disponíveis.
+5. `provas_trabalhos.html` — Registro de avaliações e trabalhos.
+6. `cronograma.html` — Visualização do cronograma de estudos.
+7. `dicas_estudo.html` — Dicas para melhorar os estudos.
+8. `perguntas_frequentes.html` — Dúvidas frequentes.
+9. `sobre.html` — Informações sobre o projeto.
+10. `contato.html` — Página de contato.
+11. `recursos_estudo.html` — Recursos de apoio aos estudos.
 
-```
-projeto/
-├── README.md
-├── html/      páginas do site
-├── css/       estilos (base.css comum + um arquivo por página)
-├── img/       imagens
-├── audio/     áudio da página Dicas de estudo
-└── video/     vídeo da página Dicas de estudo
-```
+Todas as páginas possuem um menu de navegação compartilhado.
 
-O arquivo `base.css` reúne o estilo comum a todas as páginas. O CSS de cada página importa esse arquivo e acrescenta só o que é específico dela, como o destaque da página atual no menu.
+## 6. Tecnologias utilizadas
 
-## Como executar
+- **HTML5:** estruturação do conteúdo e dos elementos das páginas.
+- **CSS3:** estilização, identidade visual e organização dos elementos da interface.
 
-Não é preciso instalar nada. Baixe o projeto e abra o arquivo `html/inicio.html` em um navegador. A partir do menu, as demais páginas podem ser acessadas.
+## 7. Estrutura do projeto
 
-## Melhorias futuras
+O projeto está organizado nas seguintes pastas:
 
-- Validar os formulários com JavaScript.
-- Gerar o cronograma semanal a partir das matérias, dos horários e das provas informados.
-- Guardar os dados no navegador.
+- `html/` — Arquivos das páginas HTML.
+- `css/` — Arquivos de estilização, incluindo uma folha de estilos base e arquivos específicos das páginas.
+- `img/` — Imagens utilizadas no projeto.
+- `audio/` — Arquivos de áudio.
+- `video/` — Arquivos de vídeo.
 
-## Mídias
+## 8. Como executar
 
-| Arquivo | Onde é usado | Fonte e licença |
-|---|---|---|
-| `audio/leberch-deep-concentration-263073.mp3` | Dicas de estudo | Pixabay |
-| Imagem da pasta `img/` | Sobre | Pngtree |
-| Vídeo da pasta `video/` | Dicas de estudo | Vecteezy |
+O projeto não exige instalação de dependências.
 
-## Autor
+Para visualizar a plataforma:
+
+1. Baixe ou clone este repositório.
+2. Acesse a pasta `html/`.
+3. Abra o arquivo `inicio.html` em um navegador.
+
+## 9. Evidências do projeto
+
+O desenvolvimento do PlanoUni resultou em uma plataforma organizada em diferentes páginas, com navegação compartilhada e identidade visual própria.
+
+Entre as páginas desenvolvidas estão a página inicial, os formulários de cadastro e organização acadêmica, a definição de disponibilidade e a visualização do cronograma de estudos.
+
+As evidências visuais do projeto podem ser consultadas no documento PDF disponibilizado junto à documentação.
+
+## 10. Limitações do protótipo
+
+Atualmente, o PlanoUni é um protótipo desenvolvido com HTML5 e CSS3.
+
+- Os formulários ainda não enviam nem armazenam informações.
+- O cronograma apresenta um exemplo fixo, preenchido manualmente.
+- A validação dos formulários e a geração automática do cronograma ainda não foram implementadas.
+
+## 11. Melhorias futuras
+
+Como possibilidades de evolução do projeto, pretendo:
+
+- Implementar validação dos formulários com JavaScript.
+- Desenvolver a geração automática do cronograma de estudos.
+- Permitir o armazenamento das informações cadastradas.
+- Aprimorar a interação entre as páginas.
+- Evoluir o protótipo para uma aplicação web mais completa.
+
+## 12. Créditos de mídia
+
+- Áudio: Pixabay.
+- Imagem: Pngtree.
+- Vídeo: Vecteezy.
+
+## 13. Autor
 
 **Denilson Ferreira de Carvalho Filho**
+
+Projeto acadêmico desenvolvido na disciplina de Desenvolvimento Front-End para Web.
