@@ -69,11 +69,9 @@ Para visualizar a plataforma:
 
 ## 9. Evidências do projeto
 
-O desenvolvimento do PlanoUni resultou em uma plataforma organizada em diferentes páginas, com navegação compartilhada e identidade visual própria.
+As evidências visuais do PlanoUni estão disponíveis no documento PDF abaixo, que reúne capturas de tela das 11 páginas do protótipo.
 
-Entre as páginas desenvolvidas estão a página inicial, os formulários de cadastro e organização acadêmica, a definição de disponibilidade e a visualização do cronograma de estudos.
-
-As evidências visuais do projeto podem ser consultadas no documento PDF disponibilizado junto à documentação.
+[Visualizar evidências do PlanoUni (PDF)](evidencias/Projeto_Final_PlanoUni.pdf)
 
 ## 10. Limitações do protótipo
 
