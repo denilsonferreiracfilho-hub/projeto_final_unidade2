@@ -71,7 +71,7 @@ Para visualizar a plataforma:
 
 As evidências visuais do PlanoUni estão disponíveis no documento PDF abaixo, que reúne capturas de tela das 11 páginas do protótipo.
 
-[Visualizar evidências do PlanoUni (PDF)](evidencias/Projeto_Final_PlanoUni.pdf)
+[Visualizar evidências do PlanoUni (PDF)](Projeto%20final%20de%20Desenvolvimento%20Front-End%20para%20Web.pdf)
 
 ## 10. Limitações do protótipo
 
